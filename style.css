@@ -1,0 +1,12 @@
+h1 {
+    line-height: 0px;
+    margin: 1em;
+}
+
+div {
+    min-height: 3rem;
+}
+
+div#titulo {
+    min-height: initial;
+}

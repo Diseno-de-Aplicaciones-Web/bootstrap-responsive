@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Inicio Bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Fin Bootstrap links -->
+
+    <!-- Enlace al CSS a medida -->
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="container">
+
+    <div id="titulo" class="card row col m-3">
+        <div class="card-body">
+            <h1 class="row col">Bootstrap responsive</h1>
+        </div>
+    </div>
+
+    <div class="card row col m-3">
+        <div class="card-body">
+            <h2 class="card-title">Columnas responsive (2 niveles)</h5>
+                <p>La clase <code>col</code> sin modificador de tamaño se refiere al tamaño más pequeño de pantalla.</p>
+                <p>Empezamos indicando el tamaño para el caso más pequeño y continuamos especificando los tamaños para los saltos que nos interesen:</p>
+                <ol>
+                    <li>col-</li>
+                    <li>col-sm-</li>
+                    <li>col-md-</li>
+                    <li>col-lg-</li>
+                    <li>col-xl-</li>
+                </ol>
+            <div class="card-text">
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 bg-light border boder-primary d-flex align-items-center justify-content-center">
+                        A
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 bg-light border border-secondary d-flex align-items-center justify-content-center">
+                                B1
+                            </div>
+                            <div class="col-12 col-lg-6 bg-light border border-secondary d-flex align-items-center justify-content-center">
+                                B2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="card row col m-3">
+        <div class="card-body">
+            <h2 class="card-title">Columnas responsive (3 niveles)</h5>
+            <p>Utiliza las clases <code>d</code> para ocultar elementos en caso de que la pantalla sea muy pequeña</p>
+            <div class="card-text">
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 bg-light border boder-primary d-flex align-items-center justify-content-center">A</div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 bg-light border border-secondary d-flex align-items-center justify-content-center">B</div>
+                            <div class="col d-none d-md-block ">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-6 bg-light border border-secondary d-flex align-items-center justify-content-center">C1</div>
+                                    <div class="col-md-12 col-lg-6 bg-light border border-secondary d-flex align-items-center justify-content-center">C2</div>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
